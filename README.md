@@ -1,5 +1,7 @@
 # cardiotocography-signals-analysis
 
+We performed ML analysis on intrapartum cardiotocography (CTG) signals. Here is a brief summary of the [data](##Data), the preprocessing we applied on signals, the analysis methods and some of the results.
+
 ## Data
 We used intrapartum cardiotocography (CTG) signals [database](https://www.physionet.org/content/ctu-uhb-ctgdb/1.0.0/) from PhysioNet. Each CTG contains a FHR time series and a Uterine Contraction (UC) signal. The database also includes maternal, delivery, and fetal clinical details.
 
@@ -24,6 +26,11 @@ We used Fetal Heart Rate (FHR) time series to calculate Heart Rate Variability (
 - BE
 
 For the case of HRV/pH relationship we further experiment with ML algorithms, including *k-means* and *DBSCAN* to decide normal/abnormal pH range.
+
+## HRV/pH results
+For the case of HRV/pH in *vaginal* delivery, we concluded in *normal* pH values: $7.17 \leq pH \leq 7.32$.
+
+<img src="/imgs/rich_scatter_vaginal.png" width="800" height="400" alt="HRV/pH analysis">
 
 ## Citations
 - [Václav Chudáček, Jiří Spilka, Miroslav Burša, Petr Janků, Lukáš Hruban, Michal Huptych, Lenka Lhotská. Open access intrapartum CTG database. BMC Pregnancy and Childbirth 2014 14:16](https://bmcpregnancychildbirth.biomedcentral.com/counter/pdf/10.1186/1471-2393-14-16.pdf)
